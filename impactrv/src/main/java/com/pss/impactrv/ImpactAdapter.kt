@@ -4,7 +4,6 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.constraintlayout.widget.ConstraintSet
 import androidx.recyclerview.widget.RecyclerView
 
 class ImpactAdapter : RecyclerView.Adapter<ImpactViewHolder>() {
@@ -28,7 +27,7 @@ class ImpactAdapter : RecyclerView.Adapter<ImpactViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: ImpactViewHolder, position: Int) {
-        holder.itemView.findViewById<ConstraintLayout>(R.id.background).setOnClickListener { listener.onClick(itemList[position%2], position%2) }
+        holder.itemView.findViewById<ConstraintLayout>(R.id.background).setOnClickListener { listener.onClickEvent(itemList[position%2], position%2) }
 
         holder.bind(item = itemList[position%2])
     }
@@ -42,5 +41,5 @@ class ImpactAdapter : RecyclerView.Adapter<ImpactViewHolder>() {
 
 interface ImpactRvListener {
 
-    fun onClick(item: ImpactRvItem, position: Int)
+    fun onClickEvent(item: ImpactRvItem, position: Int)
 }
