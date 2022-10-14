@@ -17,8 +17,10 @@ class ImpactRecyclerView @JvmOverloads constructor(
         impactAdapter = ImpactAdapter()
         impactAdapter.init(items, context)
         layoutManager = ImpactLayoutManager(context = context, orientation = LinearLayoutManager.VERTICAL, reverseLayout = false)
+        (layoutManager as ImpactLayoutManager).scrollToPositionWithOffset( Int.MAX_VALUE/2 , this.width/2)
         snapHelper = PagerSnapHelper()
         snapHelper.attachToRecyclerView(this)
+
         return this
     }
 
