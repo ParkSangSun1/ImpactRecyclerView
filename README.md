@@ -1,8 +1,8 @@
 # NotificationBarCustom
 [![](https://jitpack.io/v/ParkSangSun1/ImpactRecyclerView.svg)](https://jitpack.io/#ParkSangSun1/ImpactRecyclerView)
-
 🪄 Library that scrolls RecyclerView indefinitely, helps with Carousel functionality, highlights and aligns central items to further highlight one item
 
+<br>
 
 ## Demo
 |  ImpactRecyclerView
