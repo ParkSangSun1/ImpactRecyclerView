@@ -1,6 +1,27 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
+}
+
+afterEvaluate {
+    publishing{
+        publications{
+            release(MavenPublication){
+                from components.release
+                groupId = 'com.pss'
+                artifactId = 'impactrv'
+                version = '1.0'
+            }
+
+            debug(MavenPublication) {
+                from components.debug
+                groupId = 'com.pss'
+                artifactId = 'impactrv'
+                version = '1.0'
+            }
+        }
+    }
 }
 
 android {
