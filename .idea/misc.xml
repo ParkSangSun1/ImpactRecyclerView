@@ -6,7 +6,8 @@
         <entry key="..\:/Users/apple/AndroidStudioProjects/ImpactRecyclerView/app/src/main/res/layout/activity_main.xml" value="0.10400000000000001" />
         <entry key="..\:/Users/apple/AndroidStudioProjects/ImpactRecyclerView/impactrv/src/main/res/drawable/image_shape.xml" value="0.1" />
         <entry key="..\:/Users/apple/AndroidStudioProjects/ImpactRecyclerView/impactrv/src/main/res/drawable/item_background.xml" value="0.1" />
-        <entry key="..\:/Users/apple/AndroidStudioProjects/ImpactRecyclerView/impactrv/src/main/res/layout/impact_rv_item.xml" value="0.1" />
+        <entry key="..\:/Users/apple/AndroidStudioProjects/ImpactRecyclerView/impactrv/src/main/res/drawable/item_position_event.xml" value="0.1" />
+        <entry key="..\:/Users/apple/AndroidStudioProjects/ImpactRecyclerView/impactrv/src/main/res/layout/impact_rv_item.xml" value="0.152" />
       </map>
     </option>
   </component>

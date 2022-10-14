@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 
+
 class ImpactAdapter : RecyclerView.Adapter<ImpactViewHolder>() {
     private lateinit var listener: ImpactRvListener
     private val itemList: ArrayList<ImpactRvItem> = ArrayList()
@@ -22,14 +23,14 @@ class ImpactAdapter : RecyclerView.Adapter<ImpactViewHolder>() {
         viewType: Int
     ): ImpactViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.impact_rv_item, parent, false)
-
         return ImpactViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ImpactViewHolder, position: Int) {
-        holder.itemView.findViewById<ConstraintLayout>(R.id.background).setOnClickListener { listener.onClickEvent(itemList[position%2], position%2) }
-
-        holder.bind(item = itemList[position%2])
+        holder.itemView.findViewById<ConstraintLayout>(R.id.background).setOnClickListener {
+            listener.onClickEvent(itemList[position % 2], position % 2)
+        }
+        holder.bind(item = itemList[position % 2])
     }
 
     override fun getItemCount() = Int.MAX_VALUE
